@@ -1,9 +1,20 @@
-let userName = prompt('What is your name?')
-let userAge = prompt('How old are you?')
-console.log(userName)
-console.log(userAge)
+let userName = prompt('What is your name?');
+let userAge = prompt('How old are you?');
+let userNoun = prompt('Enter a noun:');
+let userVerb = prompt('Enter a verb:');
+let userAdjective = prompt('Enter an adjective:');
 
-let myStory = `Hello ${userName}, How are you doing today? How does it feel to be ${userAge} years old`
-console.log(myStory)
+console.log(userName);
+console.log(userAge);
+console.log(userNoun);
+console.log(userVerb);
+console.log(userAdjective);
 
-document.getElementById('story').innerHTML= myStory;
+let myStory = `Hello ${userName}! Welcome to the magical land of Codeville. At the age of ${userAge}, you are about to embark on an incredible adventure. 
+In this land, there was a ${userAdjective} ${userNoun} who had a special talent: they could ${userVerb} like no one else! 
+One day, the ${userNoun} decided to use their ${userVerb} skills to save the kingdom from a terrible fate. 
+With courage and determination, the ${userAdjective} ${userNoun} became a hero, and their story was told for generations.`;
+
+console.log(myStory);
+
+document.getElementById('story').innerHTML = myStory;
